@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  php:
+    container_name: parser-php
+    build: ./php
+    volumes:
+      - ../src:/var/www/src
+
+networks:
+  default:
+    external:
+      name: dev
