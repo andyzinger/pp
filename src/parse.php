@@ -28,5 +28,4 @@ $products = ProductResponseParser::parse($productsResponse);
 $productsService = new ProductsService();
 $saved = $productsService->saveAll($products);
 
-
-echo "\n";
+//todo: добавить логирование в случае ошибки при сохранении данных
